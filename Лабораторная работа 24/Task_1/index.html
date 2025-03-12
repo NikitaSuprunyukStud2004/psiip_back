@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./css/fixed_navbar.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/modal_window.css">
+    <link rel="stylesheet" href="./css/preloader.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <img id="logo" src="./images/mazda_logo.png" alt="#">
+        <p>Загружаемся...</p>
+    </div>
+    <script src="./js/preloader.js"></script>
+
+    <header>
+        <div class="block">
+            <img class="header-logo" src="./images/header_logo.png" alt="#" onclick="location.reload()" />
+            <p class="header-number">+7 (495) 507-96-49</p>
+            <div id="openModal" class="header-button">
+                <p class="header-button-text">Отправить сообщение</p>
+            </div>
+            <div class="header-gray-text">
+                <p>Москва, Ермакова роща, 7А стр.1</p>
+                <p>М. Шелепиха, м. Деловой центр и м. Выставочная.</p>
+            </div>
+            <div class="header-messengers">
+                <img class="header-messengers-icon" src="./images/whatsapp.png" alt="#">
+                <img class="header-messengers-icon" src="./images/telegram.png" alt="#">
+            </div>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <div class="block">
+            <div class="nav-menu">
+                <p class="nav-menu-text-active" onclick="scrollToTop()">Главная</p>
+                <p class="nav-menu-text">О компании</p>
+                <p class="nav-menu-text">Блог</p>
+                <p class="nav-menu-text">Услуги</p>
+                <p class="nav-menu-text">Контакты</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <main>
+            <div id="carousel">
+                <div class="gallery">
+                    <div class="gallery-scroll">
+                        <ul>
+                            <li><img src="./images/gallery_image1.png"></li>
+                            <li><img src="./images/gallery_image2.png"></li>
+                            <li><img src="./images/gallery_image3.png"></li>
+                            <li><img src="./images/gallery_image4.png"></li>
+                        </ul>
+                    </div>
+                    <img class="arrow prev" src="./images/gallery_arrow.png" alt="#">
+                    <div class="gallery-text">
+                        <p class="gallery-font-subtitle">Технический центр</p>
+                        <p class="gallery-font-title">DVS-MAZDA</p>
+                        <p class="gallery-font-text">Бесплатная компьютерная диагностика</p>
+                        <p class="gallery-font-text">при первом обращении</p>
+                    </div>
+                    <div class="gallery-selector-bar">
+                        <img class="gallery-selector-bar-active-button" src="./images/gallery_active_selector.png"
+                            alt="#">
+                        <img class="gallery-selector-bar-button" src="./images/gallery_selector.png" alt="#">
+                        <img class="gallery-selector-bar-button" src="./images/gallery_selector.png" alt="#">
+                        <img class="gallery-selector-bar-button" src="./images/gallery_selector.png" alt="#">
+                    </div>
+                    <img class="arrow next" src="./images/gallery_arrow.png" alt="#">
+                </div>
+            </div>
+
+            <div style="background-color: #F5F5F5;">
+                <div class="block">
+                    <div class="service-list">
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon46x34" src="./images/service_maintenance.png" alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <p class="service-list-button-text">Техобслуживание</p>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon34x43"
+                                src="./images/service_automatic_transmission_repair.png" alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <p class="service-list-button-text">Ремонт АКПП</p>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon46x34" src="./images/service_computer_diagnostics.png"
+                                alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <div>
+                                <p class="service-list-button-text">Компьютерная</p>
+                                <p class="service-list-button-text">диагностика</p>
+                            </div>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon48x38" src="./images/service_wheel_alignment.png"
+                                alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <p class="service-list-button-text">Сход развала</p>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon46x29" src="./images/service_body_repair.png" alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <p class="service-list-button-text">Кузовной ремонт</p>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon47x36" src="./images/service_tow_truck.png" alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <p class="service-list-button-text">Эвакуатор</p>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon46x33" src="./images/service_engine_repair.png"
+                                alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <p class="service-list-button-text">Ремонт двигателя</p>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon46x31" src="./images/service_anti-theft_systems.png"
+                                alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <div>
+                                <p class="service-list-button-text">Противоугонные</p>
+                                <p class="service-list-button-text">системы</p>
+                            </div>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon46x30" src="./images/service_electrician.png" alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <p class="service-list-button-text">Электрика</p>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon45x44"
+                                src="./images/service_air_conditioner_refilling_and_repair.png" alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <div>
+                                <p class="service-list-button-text">Заправка и ремонт</p>
+                                <p class="service-list-button-text">кондиционеров</p>
+                            </div>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon40x46" src="./images/service_cooling_system_repair.png"
+                                alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <div>
+                                <p class="service-list-button-text">Ремонт системы</p>
+                                <p class="service-list-button-text">охладения</p>
+                            </div>
+                        </div>
+                        <div class="service-list-button">
+                            <img class="service-list-button-icon41x45" src="./images/service_exhaust_system_repair.png"
+                                alt="#" />
+                            <div class="service-list-button-line"></div>
+                            <div>
+                                <p class="service-list-button-text">Ремонт выхлопной</p>
+                                <p class="service-list-button-text">системы</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="cars-list">
+                    <p class="cars-list-title">Автомобили мазда</p>
+                    <div class="red-line" style="margin-bottom: clamp(27.307px, 3.556vw, 68.267px);"></div>
+                    <div class="cars-list-grid">
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_2.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda 2</p>
+                            <p class="cars-list-grid-small-text">1980-2015</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_3.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda 3</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_5.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda 5</p>
+                            <p class="cars-list-grid-small-text">1998-2000</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_6.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda 6</p>
+                            <p class="cars-list-grid-small-text">1987-1995</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_bt-50.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda BT-50</p>
+                            <p class="cars-list-grid-small-text">1998-2000</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_cx-3.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda CX-3</p>
+                            <p class="cars-list-grid-small-text">1996-2022</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_cx-30.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda CX-30</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_cx-5.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda CX-5</p>
+                            <p class="cars-list-grid-small-text">1987-1995</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_cx-7.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda CX-7</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_cx-9.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda CX-9</p>
+                            <p class="cars-list-grid-small-text">1998-2000</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_mpv.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda MPV</p>
+                            <p class="cars-list-grid-small-text">1998-2000</p>
+                        </div>
+                        <div>
+                            <img class="cars-list-grid-img" src="./images/car_mazda_mx-5.png" alt="#" />
+                            <p class="cars-list-grid-text">Mazda MX-5</p>
+                            <p class="cars-list-grid-small-text">1996-2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="maintenance">
+                    <p class="maintenance-title" style="margin-top: clamp(34.79px, 4.53vw, 53px);">Станция
+                        технического
+                        обслуживания</p>
+                    <p class="maintenance-title" style="margin-bottom: clamp(17.723px, 2.308vw, 27px);">автомобилей
+                        «ДВС-МАЗДА»</p>
+                    <div class="red-line" style="margin-bottom: clamp(25.6px, 3.333vw, 39px);"></div>
+                    <p class="maintenance-subtitle" style="margin-bottom: clamp(26.256px, 3.419vw, 40px);">Мы
+                        предлагаем
+                    </p>
+                    <div class="maintenance-offers">
+                        <ul class="maintenance-offers-list">
+                            <li>Бесплатная компьютерная диагностика автомобиля Mazda каждому новому клиенту!</li>
+                            <li>Плановое техническое обслуживание автомобиля Mazda!</li>
+                            <li>Ремонт автомобилей Mazda любой сложности!</li>
+                            <li>Подбор запасных частей и расходных материалов для автомобилей Mazda!</li>
+                        </ul>
+                        <ul class="maintenance-offers-list">
+                            <li>Установка сигнализации и систем дистанционного контроля за автомобилем Mazda!</li>
+                            <li>Шиномонтаж и балансировка для автомобилей Mazda!</li>
+                            <li>Чистка и заправка кондиционера автомобилей Mazda!</li>
+                            <li>Эвакуация автомобилей Mazda по Москве!</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="advantages">
+                    <p class="advantages-subtitle" style="margin-bottom: clamp(30.851px, 4.017vw, 47px);">Наши
+                        преимущества
+                    </p>
+                    <div class="advantages-list">
+                        <div class="advantages-list-card">
+                            <img class="advantages-list-card-icon" src="./images/advantages_gear_icon.png" alt="#">
+                            <p class="advantages-list-card-text">Гарантия на работы и запасные части для автомобилей
+                                Mazda
+                            </p>
+                        </div>
+                        <div class="advantages-list-card">
+                            <img class="advantages-list-card-icon" src="./images/advantages_card_icon.png" alt="#">
+                            <p class="advantages-list-card-text">Доступные цены на ремонт и облуживание автомобилей
+                                Mazda
+                            </p>
+                        </div>
+                        <div class="advantages-list-card">
+                            <img class="advantages-list-card-icon" src="./images/advantages_eye_icon.png" alt="#">
+                            <p class="advantages-list-card-text">Свободный доступ в ремзону — отсутствие не
+                                согласованных
+                                скрытых работ</p>
+                        </div>
+                        <div class="advantages-list-card">
+                            <img class="advantages-list-card-icon" src="./images/advantages_expectation_icon.png"
+                                alt="#">
+                            <p class="advantages-list-card-text">Клиентская зона ожидания: WI-FI, TB, напитки</p>
+                        </div>
+                        <div class="advantages-list-card">
+                            <img class="advantages-list-card-icon" src="./images/advantages_timer_icon.png" alt="#">
+                            <p class="advantages-list-card-text">5 минут пешком до метро и МЦД Шелепиха</p>
+                        </div>
+                    </div>
+                    <div class="advantages-promotion"></div>
+                </div>
+            </div>
+
+            <div style="background-color: #F5F5F5;">
+                <div class="block">
+                    <div class="repair">
+                        <p class="repair-title">Ремонт и сервис мазда</p>
+                        <p class="repair-text">Обслуживание и ремонт автомобиля Mazda выполняется по установленному
+                        </p>
+                        <p class="repair-text" style="margin-bottom: clamp(23.631px, 3.077vw, 36px);">производителем
+                            регламенту</p>
+                        <div>
+                            <div class="repair-card" style="margin-right: clamp(19.692px, 2.564vw, 30px);">
+                                <p class="repair-card-title">Диагностика автомобилей Mazda</p>
+                                <p class="repair-card-text">При техническом обслуживании наши специалисты проводят
+                                    компьютерную диагностику и визуальный осмотр автомобиля Mazda. </p>
+                                <p class="repair-card-text">Выполняется контроль работоспособности основных систем
+                                    автомобиля — рулевое управление, тормозная система, двигатель, коробка передач,
+                                    подвеска, электрика.</p>
+                                <p class="repair-card-title">Плановое и внеплановое ТО</p>
+                                <p class="repair-card-title" style="margin-top: 0px;">автомобилей Mazda</p>
+                                <p class="repair-card-text">Замена технических жидкостей и расходных материалов
+                                    согласно
+                                    пробегу автомобиля.</p>
+                            </div>
+                            <div class="repair-card">
+                                <p class="repair-card-title">Ремонт автомобилей Mazda</p>
+                                <p class="repair-card-text">Мы проводим текущий, а также капитальный ремонт узла с
+                                    полным
+                                    демонтажем, разборкой и дефектовкой</p>
+                                <div>
+                                    <div class="repair-card-box" style="margin-right: clamp(9.846px, 1.282vw, 15px);">
+                                        <p class="repair-card-box-text">Ремонт двигателя Мазда</p>
+                                        <p class="repair-card-box-text">Ремонт АКПП Мазда</p>
+                                        <p class="repair-card-box-text">Ремонт ходовой Мазда</p>
+                                        <p class="repair-card-box-text">Мелктй ремонт шин</p>
+                                    </div>
+                                    <div class="repair-card-box">
+                                        <p class="repair-card-box-text">Ремонт системы охлаждения Мазда</p>
+                                        <p class="repair-card-box-text">Ремонт выхлопной системы Мазда</p>
+                                        <p class="repair-card-box-text">Замена тормозных шлангов Мазда</p>
+                                    </div>
+                                </div>
+                                <p class="repair-card-title">Шиномонтаж</p>
+                                <div class="repair-card-box">
+                                    <p class="repair-card-box-text">Регулировка развала-схождения</p>
+                                    <p class="repair-card-box-text">Балансировка дисков</p>
+                                    <p class="repair-card-box-text">Мелкий ремонт шин</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="spareparts">
+                        <p class="spareparts-title">Запасные части для автомобилей мазда</p>
+                        <div class="red-line" style="margin-top: clamp(17.067px, 2.222vw, 26px);"></div>
+                        <div class="spareparts-grid">
+                            <div class="spareparts-grid-card">
+                                <img class="spareparts-grid-card-icon" src="./images/spareparts_01.png" alt="#">
+                                <p class="spareparts-grid-card-text">На нашем складе всегда имеются основные
+                                    запасные
+                                    части,
+                                    комплектующие и технические жидкости для всего модельного ряда автомобилей
+                                    Mazda.
+                                </p>
+                            </div>
+                            <div class="spareparts-grid-card">
+                                <img class="spareparts-grid-card-icon" src="./images/spareparts_02.png" alt="#">
+                                <p class="spareparts-grid-card-text">Наши мастера имеют многолетний опыт работы с
+                                    автомобилями Mazda и знают специфику всех моделей марки.</p>
+                            </div>
+                            <div class="spareparts-grid-card">
+                                <img class="spareparts-grid-card-icon" src="./images/spareparts_03.png" alt="#">
+                                <p class="spareparts-grid-card-text">Мы применяем оригинальные и качественные не
+                                    оригинальные запчасти для автомобилей Mazda. На все работы и запасные части мы
+                                    даем
+                                    гарантию.</p>
+                            </div>
+                            <div class="spareparts-grid-card">
+                                <img class="spareparts-grid-card-icon" src="./images/spareparts_04.png" alt="#">
+                                <p class="spareparts-grid-card-text">Техцентр DVS-Mazda оснащен современными
+                                    стендами
+                                    для
+                                    диагностики и ремонта любой сложности автомобилей Mazda.</p>
+                            </div>
+                        </div>
+                        <p class="spareparts-text" style="margin-top: clamp(34.79px, 4.53vw, 53px);">Будем рады
+                            обслужить ваш автомобиль мазда в нашем техцентре!</p>
+                    </div>
+                </div>
+        </main>
+
+        <footer>
+            <div class="footer-top-background">
+                <div class="block">
+                    <div class="footer-top">
+                        <p class="footer-top-title">Остались вопросы?</p>
+                        <p class="footer-top-text">Чтобы получить больше информации, позвоните нам или заполните
+                            форму
+                            ниже
+                        </p>
+                        <div class="footer-top-form">
+                            <input id="nameHax" class="footer-top-form-input"
+                                style="margin-right: clamp(12.472px, 1.624vw, 19px);" placeholder="Ваше имя" />
+                            <input id="telHax" class="footer-top-form-input"
+                                style="margin-right: clamp(9.846px, 1.282vw, 15px);" placeholder="Телефон" />
+                            <div class="footer-top-form-button">
+                                <p class="footer-top-form-button-text">Отправить</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-background">
+                <div class="block">
+                    <div class="footer-bottom">
+                        <div class="footer-bottom-navigation">
+                            <p class="footer-bottom-subtitle">О компании</p>
+                            <p class="footer-bottom-subtitle">Блог</p>
+                            <p class="footer-bottom-subtitle">Запчасти</p>
+                            <p class="footer-bottom-subtitle">Гарантия</p>
+                            <p class="footer-bottom-subtitle">Запись</p>
+                            <p class="footer-bottom-subtitle">Контакты</p>
+                        </div>
+                        <div class="footer-bottom-services">
+                            <p class="footer-bottom-subtitle" style="margin-bottom: clamp(9.19px, 1.197vw, 14px);">
+                                Услуги
+                            </p>
+                            <div class="footer-bottom-gray-line"></div>
+                            <div class="footer-bottom-services-textbox"
+                                style="margin-right: clamp(57.108px, 7.436vw, 87px);;">
+                                <p class="footer-bottom-text">Техобслуживание</p>
+                                <p class="footer-bottom-text">Компьютерная диагностика</p>
+                                <p class="footer-bottom-text">Ремонт АКПП мазда</p>
+                                <p class="footer-bottom-text">Ремонт двигателя</p>
+                                <p class="footer-bottom-text">Ремонт электрики</p>
+                                <p class="footer-bottom-text">Ремонт системы охладения</p>
+                                <p class="footer-bottom-text">Ремонт выхлопной системы</p>
+                            </div>
+                            <div class="footer-bottom-services-textbox">
+                                <p class="footer-bottom-text">Замена стекл</p>
+                                <p class="footer-bottom-text">Сход развал</p>
+                                <p class="footer-bottom-text">Кузовной ремонт</p>
+                                <p class="footer-bottom-text">Эвакуатор</p>
+                                <p class="footer-bottom-text">Шиномонтаж</p>
+                                <p class="footer-bottom-text">Противоугонные системы</p>
+                                <p class="footer-bottom-text">Заправка и ремонт кондиционеров</p>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-contacts">
+                            <div style="margin-bottom: clamp(7.877px, 1.026vw, 12px);">
+                                <p class="footer-bottom-contacts-subtitle">+7 (495) 507-96-49</p>
+                                <img class="footer-bottom-contacts-whatsapp" src="./images/footer_bottom_whatsapp.png"
+                                    alt="#" />
+                                <img class="footer-bottom-contacts-telegram" src="./images/footer_bottom_telegram.png"
+                                    alt="#" />
+                            </div>
+                            <div class="footer-bottom-gray-line"></div>
+                            <p class="footer-bottom-text" style="width: clamp(207.426px, 27.009vw, 316px);">123290,
+                                г.
+                                Москва, Ермакова роща, 7А стр.1. Территория 14 ТМП. М.
+                                Шелепиха, м. Деловой центр и м. Выставочная.</p>
+                            <p class="footer-bottom-contacts-email">info@dvs-motors.pro</p>
+                            <div class="footer-bottom-contacts-button">
+                                <p class="footer-bottom-contacts-button-text">Отправить сообщение</p>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-gray-line" style="margin-bottom: clamp(15.754px, 2.051vw, 24px);">
+                        </div>
+                        <p class="footer-bottom-text" style="margin-bottom: 0px; text-align: center;">Все права на
+                            торговые знаки и изображения принадлежат компании Mazda Motor Corporation. Оптимизация
+                            сайтов Голденстудио.ру</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form class="modal-form">
+                <textarea id="message" placeholder="Введите ваше сообщение" rows="4"></textarea>
+                <button type="button" id="submitMessage">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/fixed_navbar.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/page_up.js"></script>
+    <script src="./js/number_valid.js"></script>
+    <script src="./js/name_valid.js"></script>
+    <script src="./js/input_check.js"></script>
+    <script src="./js/modal_window.js"></script>
+
+    <div id="draggable" draggable="true" style="width: 100px; height: 100px; background-color: red;">Drag me</div>
+    <div id="dropzone" style="width: 200px; height: 200px; background-color: lightgray; margin-top: 20px;">Drop here
+    </div>
+
+    <script>
+        const draggable = document.getElementById("draggable");
+        const dropzone = document.getElementById("dropzone");
+
+        draggable.addEventListener("dragstart", (e) => {
+            e.dataTransfer.setData("text/plain", "This is the draggable element");
+        });
+
+        dropzone.addEventListener("dragover", (e) => {
+            e.preventDefault();
+        });
+
+        dropzone.addEventListener("drop", (e) => {
+            e.preventDefault();
+            const data = e.dataTransfer.getData("text/plain");
+            dropzone.textContent = data;
+        });
+    </script>
+
+    <div id="pointerElement" style="width: 200px; height: 200px; background-color: blue;">Move Pointer Here</div>
+
+    <script>
+        const pointerElement = document.getElementById("pointerElement");
+
+        pointerElement.addEventListener("pointerdown", () => {
+            pointerElement.style.backgroundColor = "green";
+        });
+
+        pointerElement.addEventListener("pointerup", () => {
+            pointerElement.style.backgroundColor = "blue";
+        });
+
+        pointerElement.addEventListener("pointermove", (e) => {
+            pointerElement.textContent = `Pointer at (${e.clientX}, ${e.clientY})`;
+        });
+    </script>
+
+    <div id="scrollable" style="width: 300px; height: 200px; overflow: scroll; border: 1px solid black;">
+        <div style="height: 600px;">Scroll me to see the event</div>
+    </div>
+
+    <script>
+        const scrollable = document.getElementById("scrollable");
+
+        scrollable.addEventListener("scroll", () => {
+            console.log("Scrolling...");
+        });
+    </script>
+
+    <div id="touchElement" style="width: 200px; height: 200px; background-color: orange;">Touch Here</div>
+
+    <script>
+        const touchElement = document.getElementById("touchElement");
+
+        touchElement.addEventListener("touchstart", () => {
+            touchElement.style.backgroundColor = "yellow";
+        });
+
+        touchElement.addEventListener("touchend", () => {
+            touchElement.style.backgroundColor = "orange";
+        });
+
+        touchElement.addEventListener("touchmove", (e) => {
+            touchElement.textContent = `Touch point at (${e.touches[0].clientX}, ${e.touches[0].clientY})`;
+        });
+    </script>
+
+</body>
+
+</html>

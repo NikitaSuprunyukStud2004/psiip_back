@@ -1,0 +1,39 @@
+#preloader {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    user-select: none;
+}
+
+#preloader p {
+    font-weight: 700;
+    font-size: clamp(13.6px, 1.771vw, 34px);
+}
+
+#logo {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 20px;
+    animation: rotateY 2s linear infinite;
+    transform-style: preserve-3d;
+}
+
+@keyframes rotateY {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}

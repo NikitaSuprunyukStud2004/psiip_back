@@ -1,0 +1,44 @@
+.arrow {
+  position: absolute;
+  width: var(--gallery-arrow-button-size);
+  height: var(--gallery-arrow-button-size);
+  top: 11.222vw;
+  cursor: pointer;
+  user-select: none;
+}
+
+.prev {
+  left: 5.056vw;
+}
+
+.next {
+  transform: scaleX(-1);
+  left: 90.333vw;
+}
+
+.gallery-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+.gallery-scroll img {
+  display: block;
+  width: 100vw;
+  height: 28.1vw;
+  min-height: 215.8px;
+  min-width: 768px;
+  user-select: none;
+}
+
+.gallery-scroll ul {
+  width: 10000px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  font-size: 0;
+}
+
+.gallery-scroll li {
+  display: inline-block;
+}

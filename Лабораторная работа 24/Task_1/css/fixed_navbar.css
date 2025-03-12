@@ -1,0 +1,15 @@
+#navbar {
+    background-color: white;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 20px black;
+    z-index: 100;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}

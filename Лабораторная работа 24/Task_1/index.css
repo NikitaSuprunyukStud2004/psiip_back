@@ -1,0 +1,850 @@
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5A5A5A;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+:root {
+    --header-margin-right: clamp(26.685px, 3.475vw, 41px);
+    --header-messengers-icon-size: clamp(27.336px, 3.559vw, 42px);
+
+    --gallery-arrow-button-size: clamp(28.16px, 3.667vw, 70.4px);
+
+    --service-list-button-icon-size-46px: clamp(30.195px, 3.932vw, 46px);
+}
+
+
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-width: 768px;
+}
+
+body {
+    min-width: 768px;
+    margin: 0px;
+}
+
+p {
+    font-family: 'MazdaTypeCyrillicRegular';
+    margin: 0px;
+}
+
+header {
+    background-color: #14141B;
+}
+
+input {
+    all: unset;
+}
+
+
+
+.block {
+    display: flex;
+    width: clamp(768px, 100vw, 1170px);
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.red-line {
+    display: flex;
+    margin: 0px auto;
+    width: clamp(32.427px, 4.222vw, 81.067px);
+    height: clamp(1.28px, 0.167vw, 3.2px);
+    background-color: #910A2D;
+}
+
+
+
+.header-logo {
+    width: clamp(126.264px, 16.441vw, 194px);
+    height: clamp(34.723px, 4.521vw, 53.35px);
+    margin-top: clamp(7.81px, 1.017vw, 12px);
+    margin-bottom: clamp(16.043px, 2.089vw, 24.65px);
+    margin-right: var(--header-margin-right);
+    cursor: pointer;
+    user-select: none;
+}
+
+.header-number {
+    position: relative;
+    top: clamp(-5.858px, 0.763vw, -9px);
+    color: #FFFFFF;
+    font-size: clamp(11.715px, 1.525vw, 18px);
+    margin-right: var(--header-margin-right);
+}
+
+.header-button {
+    width: clamp(135.376px, 17.627vw, 208px);
+    height: clamp(27.336px, 3.559vw, 42px);
+    border: 1px solid #5a5a5f;
+    border-radius: 3px;
+    margin-top: clamp(11.715px, 1.525vw, 18px);
+    margin-bottom: clamp(19.525px, 2.542vw, 30px);
+    margin-right: var(--header-margin-right);
+    text-align: center;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.header-button-text {
+    color: white;
+    font-size: clamp(7.81px, 1.017vw, 12px);
+    text-transform: uppercase;
+    user-select: none
+}
+
+.header-gray-text {
+    color: #B6B6B6;
+    font-size: clamp(9.763px, 1.271vw, 15px);
+    margin-right: var(--header-margin-right);
+}
+
+.header-messengers {
+    display: inline;
+    user-select: none;
+}
+
+.header-messengers-icon {
+    width: var(--header-messengers-icon-size);
+    height: var(--header-messengers-icon-size);
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.nav-menu {
+    margin-top: clamp(14.319px, 1.864vw, 22px);
+    margin-bottom: clamp(13.668px, 1.78vw, 21px);
+    margin-left: clamp(9.112px, 1.186vw, 14px);
+    color: #3C3C3C;
+    font-size: clamp(9.112px, 1.186vw, 14px);
+    text-transform: uppercase;
+    user-select: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-menu-text {
+    display: inline;
+    margin-right: clamp(26.685px, 3.475vw, 41px);
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-menu-text:after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -2px;
+    display: block;
+    width: 0px;
+    height: 2px;
+    transition: 0.3s;
+    background: #910A2D;
+}
+
+.nav-menu-text-active {
+    display: inline;
+    margin-right: clamp(26.685px, 3.475vw, 41px);
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-menu-text-active:after {
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: -2px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #910A2D;
+}
+
+
+
+.gallery {
+    position: relative;
+    width: 100%;
+    height: 28.1vw;
+    min-height: 215.8px;
+}
+
+.gallery-text {
+    position: absolute;
+    top: 3.5vw;
+    left: 17.5vw;
+    color: white;
+}
+
+.gallery-font-subtitle {
+    font-size: clamp(9.387px, 1.222vw, 23.467px);
+    text-transform: uppercase;
+    letter-spacing: clamp(1.68px, 0.219vw, 4.2px);
+    margin-bottom: clamp(0.853px, 0.111vw, 2.133px);
+}
+
+.gallery-font-title {
+    font-size: clamp(21.333px, 2.778vw, 53.333px);
+    text-transform: uppercase;
+    margin-bottom: clamp(3.84px, 0.5vw, 9.6px);
+    font-weight: bold;
+}
+
+.gallery-font-text {
+    font-size: clamp(7.168px, 0.933vw, 17.92px);
+}
+
+.gallery-selector-bar {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    top: 24.111vw;
+    left: 47.333vw;
+}
+
+.gallery-selector-bar-button {
+    width: clamp(2.56px, 0.333vw, 6.4px);
+    height: clamp(2.56px, 0.333vw, 6.4px);
+    margin-right: clamp(9.387px, 1.222vw, 23.467px);
+    cursor: pointer;
+    user-select: none;
+}
+
+.gallery-selector-bar-active-button {
+    width: clamp(8.533px, 1.111vw, 21.333px);
+    height: clamp(8.533px, 1.111vw, 21.333px);
+    margin-right: clamp(6.4px, 0.833vw, 16px);
+    cursor: pointer;
+    user-select: none;
+}
+
+
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, clamp(247.322px, 32.203vw, 380px));
+    grid-template-rows: repeat(4, clamp(68.339px, 8.898vw, 105px));
+    gap: clamp(9.763px, 1.271vw, 15px);
+    margin-top: clamp(37.415px, 4.872vw, 57px);
+    margin-bottom: clamp(46.605px, 6.068vw, 71px);
+    align-self: center;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-list-button {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: clamp(68.923px, 8.974vw, 105px) 2px clamp(180.513px, 23.504vw, 275px);
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.service-list-button-icon46x34 {
+    width: var(--service-list-button-icon-size-46px);
+    height: clamp(22.318px, 2.906vw, 34px);
+    margin-left: clamp(21.005px, 2.735vw, 32px);
+    margin-right: clamp(17.723px, 2.308vw, 27px);
+}
+
+.service-list-button-icon34x43 {
+    width: clamp(22.318px, 2.906vw, 34px);
+    height: clamp(28.226px, 3.675vw, 43px);
+    margin-left: clamp(26.256px, 3.419vw, 40px);
+    margin-right: clamp(22.318px, 2.906vw, 34px);
+}
+
+.service-list-button-icon48x38 {
+    width: clamp(31.508px, 4.103vw, 48px);
+    height: clamp(24.944px, 3.248vw, 38px);
+    margin-left: clamp(19.036px, 2.479vw, 29px);
+    margin-right: clamp(18.379px, 2.393vw, 28px);
+}
+
+.service-list-button-icon46x29 {
+    width: var(--service-list-button-icon-size-46px);
+    height: clamp(19.036px, 2.479vw, 29px);
+    margin-left: clamp(19.692px, 2.564vw, 30px);
+    margin-right: clamp(19.036px, 2.479vw, 29px);
+}
+
+.service-list-button-icon47x36 {
+    width: clamp(30.851px, 4.017vw, 47px);
+    height: clamp(23.631px, 3.077vw, 36px);
+    margin-left: clamp(20.349px, 2.65vw, 31px);
+    margin-right: clamp(17.723px, 2.308vw, 27px);
+}
+
+.service-list-button-icon46x33 {
+    width: var(--service-list-button-icon-size-46px);
+    height: clamp(21.662px, 2.821vw, 33px);
+    margin-left: clamp(19.692px, 2.564vw, 30px);
+    margin-right: clamp(19.036px, 2.479vw, 29px);
+}
+
+.service-list-button-icon46x31 {
+    width: var(--service-list-button-icon-size-46px);
+    height: clamp(20.349px, 2.65vw, 31px);
+    margin-left: clamp(19.692px, 2.564vw, 30px);
+    margin-right: clamp(19.036px, 2.479vw, 29px);
+}
+
+.service-list-button-icon46x30 {
+    width: var(--service-list-button-icon-size-46px);
+    height: clamp(19.692px, 2.564vw, 30px);
+    margin-left: clamp(21.005px, 2.735vw, 32px);
+    margin-right: clamp(17.723px, 2.308vw, 27px);
+}
+
+.service-list-button-icon45x44 {
+    width: clamp(29.538px, 3.846vw, 45px);
+    height: clamp(28.882px, 3.761vw, 44px);
+    margin-left: clamp(21.005px, 2.735vw, 32px);
+    margin-right: clamp(18.379px, 2.393vw, 28px);
+}
+
+.service-list-button-icon40x46 {
+    width: clamp(26.256px, 3.419vw, 40px);
+    height: var(--service-list-button-icon-size-46px);
+    margin-left: clamp(22.974px, 2.991vw, 35px);
+    margin-right: clamp(19.692px, 2.564vw, 30px);
+}
+
+.service-list-button-icon41x45 {
+    width: clamp(26.913px, 3.504vw, 41px);
+    height: clamp(29.538px, 3.846vw, 45px);
+    margin-left: clamp(20.349px, 2.65vw, 31px);
+    margin-right: clamp(21.662px, 2.821vw, 33px);
+}
+
+.service-list-button-line {
+    width: 100%;
+    height: 100%;
+    background-color: #DBDBDB;
+}
+
+.service-list-button-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: clamp(10.503px, 1.368vw, 16px);
+    letter-spacing: 1px;
+}
+
+
+
+.cars-list {
+    width: 100%;
+}
+
+.cars-list-title {
+    font-size: clamp(12.8px, 1.667vw, 32px);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: clamp(28.587px, 3.722vw, 71.467px);
+    margin-bottom: clamp(11.947px, 1.556vw, 29.867px);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.cars-list-grid {
+    display: grid;
+    width: min-content;
+    grid-template-columns: repeat(4, clamp(149.662px, 19.487vw, 228px));
+    gap: clamp(47.918px, 6.239vw, 73px);
+    text-align: center;
+    margin: 0px auto;
+}
+
+.cars-list-grid-img {
+    width: 100%;
+    height: clamp(64.985px, 8.462vw, 99px);
+}
+
+.cars-list-grid-text {
+    font-size: clamp(11.159px, 1.453vw, 17px);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: clamp(5.251px, 0.684vw, 8px);
+    margin-bottom: clamp(5.251px, 0.684vw, 8px);
+    letter-spacing: 1px;
+}
+
+.cars-list-grid-small-text {
+    font-size: clamp(8.533px, 1.111vw, 13px);
+    font-weight: 400;
+}
+
+
+
+.maintenance {
+    width: 100%;
+    margin-top: clamp(51.2px, 6.667vw, 78px);
+    margin-bottom: clamp(32.821px, 4.274vw, 50px);
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.maintenance-title {
+    font-size: clamp(19.692px, 2.564vw, 30px);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.maintenance-subtitle {
+    font-size: clamp(13.128px, 1.709vw, 20px);
+    font-weight: 400;
+    color: #565656;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.maintenance-offers {
+    width: clamp(742.4px, 96.667vw, 1131px);
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: clamp(19.692px, 2.564vw, 30px);
+    margin: 0px auto;
+}
+
+.maintenance-offers-list {
+    list-style-image: url("./images/maintenance_marker.png");
+    font-size: clamp(11.815px, 1.538vw, 18px);
+    font-weight: 400;
+    padding: 0px clamp(13.128px, 1.709vw, 20px);
+}
+
+.maintenance-offers-list li {
+    padding-bottom: clamp(13.128px, 1.709vw, 20px);
+    margin-bottom: clamp(13.128px, 1.709vw, 20px);
+    border-bottom: 1px #939393 dotted;
+}
+
+.maintenance-offers-list li:last-child {
+    padding-bottom: 0px;
+    margin-bottom: clamp(32.821px, 4.274vw, 50px);
+    border-bottom: none;
+}
+
+
+
+.advantages {
+    width: 100%;
+    text-align: center;
+}
+
+.advantages-subtitle {
+    font-size: clamp(13.128px, 1.709vw, 20px);
+    font-weight: 400;
+    color: #565656;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 4px;
+}
+
+.advantages-list-card {
+    display: grid;
+    width: min-content;
+    grid-template-columns: clamp(53.826px, 7.009vw, 82px) clamp(177.231px, 23.077vw, 270px);
+    grid-template-rows: clamp(53.826px, 7.009vw, 82px);
+    column-gap: clamp(9.19px, 1.197vw, 14px);
+    align-items: center;
+    text-align: left;
+    margin-left: clamp(6.564px, 0.855vw, 10px);
+    margin-bottom: clamp(26.256px, 3.419vw, 40px);
+}
+
+.advantages-list-card-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.advantages-list-card-text {
+    font-size: clamp(11.815px, 1.538vw, 18px);
+    font-weight: 400;
+}
+
+.advantages-promotion {
+    margin-top: clamp(22.318px, 2.906vw, 34px);
+    width: 100%;
+    height: clamp(71.549px, 9.316vw, 109px);
+    background-image: url("./images/advantages-banner.png");
+    background-size: 100% 100%;
+    margin-bottom: clamp(48.574px, 6.325vw, 74px);
+}
+
+
+
+.repair {
+    width: 100%;
+    padding-top: clamp(40.697px, 5.299vw, 62px);
+}
+
+.repair-title {
+    font-size: clamp(12.8px, 1.667vw, 32px);
+    font-weight: 700;
+    margin-bottom: clamp(9.846px, 1.282vw, 15px);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.repair-text {
+    font-size: clamp(11.815px, 1.538vw, 18px);
+    font-weight: 400;
+    text-align: center;
+}
+
+.repair-card {
+    float: left;
+    width: clamp(374.154px, 48.718vw, 570px);
+    height: clamp(311.138px, 40.513vw, 474px);
+    background-color: white;
+    border-top: 1px solid #910A2D;
+    padding: 0px clamp(29.538px, 3.846vw, 45px);
+    box-sizing: border-box;
+}
+
+.repair-card-title {
+    display: block;
+    margin-top: clamp(21.005px, 2.735vw, 32px);
+    font-size: clamp(14.441px, 1.88vw, 22px);
+    font-weight: 700;
+}
+
+.repair-card-text {
+    margin-top: clamp(7.221px, 0.94vw, 11px);
+    font-size: clamp(11.815px, 1.538vw, 18px);
+    font-weight: 400;
+}
+
+.repair-card-box {
+    vertical-align: top;
+    display: inline-block;
+    margin-top: clamp(7.221px, 0.94vw, 11px);
+}
+
+.repair-card-box-text {
+    color: #910A2D;
+    font-size: clamp(10.503px, 1.368vw, 16px);
+    margin-top: clamp(3.282px, 0.427vw, 5px);
+}
+
+.spareparts {
+    width: 100%;
+    margin-top: clamp(50.544px, 6.581vw, 77px);
+    margin-bottom: clamp(62.359px, 8.12vw, 95px);
+}
+
+.spareparts-title {
+    font-size: clamp(12.8px, 1.667vw, 32px);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: clamp(17.067px, 2.222vw, 26px);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.spareparts-grid {
+    width: min-content;
+    display: grid;
+    grid-template-columns: repeat(2, clamp(354.462px, 46.154vw, 540px));
+    column-gap: clamp(29.538px, 3.846vw, 45px);
+    row-gap: clamp(31.508px, 4.103vw, 48px);
+    margin-top: clamp(27.569px, 3.59vw, 42px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spareparts-grid-card {
+    display: flex;
+    align-items: center;
+}
+
+.spareparts-grid-card-icon {
+    display: inline;
+    width: clamp(51.2px, 6.667vw, 78px);
+    height: clamp(57.108px, 7.436vw, 87px);
+    margin-right: clamp(16.41px, 2.137vw, 25px);
+}
+
+.spareparts-grid-card-text {
+    display: inline;
+    font-size: clamp(11.815px, 1.538vw, 18px);
+    font-weight: 400;
+}
+
+.spareparts-text {
+    width: 100%;
+    text-align: center;
+    font-size: clamp(13.128px, 1.709vw, 20px);
+    font-weight: 700;
+}
+
+.footer-top-background {
+    width: 100%;
+    /*background-image: url("./images/footer_background.png");
+    background-size: 100% 100%;
+    background-color: black;*/
+    padding-top: clamp(30.195px, 3.932vw, 46px);
+    padding-bottom: clamp(53.826px, 7.009vw, 82px);
+    backdrop-filter: blur(10px);
+}
+
+.footer-top-background::before {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    z-index: -1;
+    background: url("./images/footer_background.png") center / cover no-repeat;
+    background-size: 100% 100%;
+    background-color: black;
+    filter: blur(2px);
+}
+
+.footer-top {
+    width: 100%;
+}
+
+.footer-top-title {
+    font-size: clamp(12.8px, 1.667vw, 32px);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+    margin-bottom: clamp(3.282px, 0.427vw, 5px);
+}
+
+.footer-top-text {
+    text-align: center;
+    font-size: clamp(11.815px, 1.538vw, 18px);
+    font-weight: 700;
+    color: white;
+    margin-bottom: clamp(22.318px, 2.906vw, 34px);
+}
+
+.footer-top-form {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(530.379px, 69.06vw, 808px);
+    height: clamp(59.077px, 7.692vw, 90px);
+    border-radius: clamp(1.969px, 0.256vw, 3px);
+    background-color: rgba(255, 255, 255, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    align-items: center;
+    padding-left: clamp(26.913px, 3.504vw, 41px);
+    padding-right: clamp(25.6px, 3.333vw, 39px);
+    box-sizing: border-box;
+}
+
+.footer-top-form-input {
+    width: clamp(179.856px, 23.419vw, 274px);
+    height: clamp(29.538px, 3.846vw, 45px);
+    background-color: white;
+    border-radius: clamp(1.313px, 0.171vw, 2px);
+    padding-left: clamp(10.503px, 1.368vw, 16px);
+    font-family: 'MazdaTypeCyrillicRegular';
+    font-size: clamp(10.503px, 1.368vw, 16px);
+    font-weight: 400;
+    color: black;
+}
+
+.footer-top-form-input::placeholder {
+    font-family: 'MazdaTypeCyrillicRegular';
+    font-size: clamp(10.503px, 1.368vw, 16px);
+    font-weight: 400;
+    color: #4F4F4F;
+    user-select: none;
+}
+
+.footer-top-form-button {
+    width: clamp(95.836px, 12.479vw, 146px);
+    height: clamp(29.538px, 3.846vw, 45px);
+    background-color: #14141B;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.footer-top-form-button-text {
+    font-size: clamp(8.533px, 1.111vw, 13px);
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer-bottom-background {
+    width: 100%;
+    background-color: #14141B;
+}
+
+.footer-bottom {
+    width: 100%;
+    padding-top: clamp(31.508px, 4.103vw, 48px);
+    padding-left: clamp(5.251px, 0.684vw, 8px);
+    padding-right: clamp(5.251px, 0.684vw, 8px);
+    padding-bottom: clamp(17.067px, 2.222vw, 26px);
+    user-select: none;
+}
+
+.footer-bottom-navigation {
+    display: inline-block;
+    width: min-content;
+    margin-right: clamp(60.39px, 7.863vw, 92px);
+}
+
+.footer-bottom-subtitle {
+    width: max-content;
+    font-size: clamp(9.846px, 1.282vw, 15px);
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: clamp(16.41px, 2.137vw, 25px);
+    user-select: text;
+}
+
+.footer-bottom-services {
+    vertical-align: top;
+    display: inline-block;
+    width: clamp(357.087px, 46.496vw, 544px);
+    margin-right: clamp(52.513px, 6.838vw, 80px);
+}
+
+.footer-bottom-gray-line {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #D0D0D04A;
+    box-sizing: border-box;
+    margin-bottom: clamp(9.846px, 1.282vw, 15px);
+}
+
+.footer-bottom-services-textbox {
+    display: inline-block;
+    width: max-content;
+}
+
+.footer-bottom-text {
+    font-size: clamp(9.846px, 1.282vw, 15px);
+    font-weight: 400;
+    color: #8E8E8E;
+    margin-bottom: clamp(5.251px, 0.684vw, 8px);
+    user-select: text;
+}
+
+.footer-bottom-contacts {
+    display: inline-block;
+    width: max-content;
+    vertical-align: top;
+}
+
+.footer-bottom-contacts-subtitle {
+    display: inline;
+    width: max-content;
+    font-size: clamp(9.846px, 1.282vw, 15px);
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    margin-right: clamp(84.021px, 10.94vw, 128px);
+    user-select: text;
+}
+
+.footer-bottom-contacts-whatsapp {
+    width: clamp(11.94px, 1.555vw, 18.19px);
+    height: clamp(11.94px, 1.555vw, 18.19px);
+    user-select: text;
+}
+
+.footer-bottom-contacts-telegram {
+    width: clamp(10.759px, 1.401vw, 16.39px);
+    height: clamp(9.026px, 1.175vw, 13.75px);
+    user-select: text;
+}
+
+.footer-bottom-contacts-email {
+    display: inline-block;
+    width: max-content;
+    font-size: clamp(9.846px, 1.282vw, 15px);
+    font-weight: 700;
+    color: white;
+    margin-bottom: clamp(14.441px, 1.88vw, 22px);
+    user-select: text;
+}
+
+.footer-bottom-contacts-button {
+    width: clamp(149.005px, 19.402vw, 227px);
+    height: clamp(29.538px, 3.846vw, 45px);
+    display: grid;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: clamp(1.969px, 0.256vw, 3px);
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-bottom-contacts-button-text {
+    font-size: clamp(8.533px, 1.111vw, 13px);
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+@media (hover: hover) {
+    .nav-menu-text:hover:after {
+        width: 100%;
+    }
+
+    .cars-list-grid-img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+@media (hover: none) {
+    .nav-menu-text:active:after {
+        width: 100%;
+    }
+
+    .cars-list-grid-img:active {
+        transform: scale(1.1);
+    }
+}
+
+@font-face {
+    font-family: "MazdaTypeCyrillicRegular";
+    src: url("./fonts/MazdaTypeCyrillicRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
